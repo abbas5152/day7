@@ -1,0 +1,34 @@
+Q1)
+What is the use of ‘this’ and ‘super’ keywords in java ?
+explain with an example.
+A1)
+in java by using this keyword we can access public class variable in methods.
+and using super keyword we can override method that means if we write method in child class and super class we can access
+method of superclass using child keyword.
+ex1)
+public class check {
+    int i;
+    int j;
+    void set(int data,int bata){
+        this.i=data;
+        this.j=bata;
+
+    }
+}
+ex2)
+public super{
+void print(){
+System.out.println("super class")
+}
+public child{
+void print(){
+System.out.println("child  class")
+}
+void nprint(){
+super.print();
+public static void main(String[] args) {
+   child c1=new child();
+   c1.nprint();
+
+   }
+}

@@ -1,0 +1,23 @@
+Q4)
+Why is multiple inheritance not supported in java at class level ?
+
+A4)
+java does not support multilevel inheritance because it's increase complexity.if class A is child class and class B
+and class C is super class.if B & C have same method with method it should call.
+ex)
+class A{
+void one(){
+System.out.println("one A");
+}
+}
+class B{
+void one(){
+System.out.println("one B");
+}
+}
+class C extends A,B{
+public static void main(String args[]){
+C s1=new C();
+s1.one();
+}
+}
